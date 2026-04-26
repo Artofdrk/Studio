@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art of Studio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- ILLIT Inspired Header Navbar -->
+    <header class="illit-header">
+        <div class="nav-left pixel-text">
+            <a href="#games">PROJECTS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#creator">CREATOR</a>
+        </div>
+        
+        <div class="nav-center">
+            <a href="#" class="logo">Art of drk</a>
+        </div>
+        
+        <div class="nav-right pixel-text">
+
+            <button class="theme-toggle" onclick="toggleTheme()">[ THEME ]</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="spinning-star">
+                <svg viewBox="0 0 24 24" width="80" height="80" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="var(--accent-blue)"/>
+                </svg>
+            </div>
+            
+            <div class="pixel-text" style="color: gray; margin-bottom: 20px;">[ INDIE DEVELOPER LABEL ]</div>
+            <h1 class="glitch-hover">CRAFTING NEXT-GEN<br>INTERACTIVE ART</h1>
+            <p>We are a student-led independent studio creating stylized, story-driven experiences and boundary-pushing gameplay.</p>
+        </section>
+
+        <!-- Ticker Divider -->
+        <div class="ticker-wrap pixel-text">
+            <div class="ticker">
+                <span class="ticker-item">+++ WELCOME TO ART OF DRK +++</span>
+                <span class="ticker-item">NEW GAME TRAILER DROPPING SOON</span>
+                <span class="ticker-item">WE BUILD WORLDS</span>
+                <span class="ticker-item">+++ WELCOME TO ART OF DRK +++</span>
+                <span class="ticker-item">NEW GAME TRAILER DROPPING SOON</span>
+                <span class="ticker-item">WE BUILD WORLDS</span>
+            </div>
+        </div>
+
+        <!-- Games Showcase (Carousel) -->
+        <div id="games" class="section-title">
+            <span class="asterisk">*</span> OUR PROJECTS
+        </div>
+        
+        <section class="games-carousel-wrapper">
+            <button class="carousel-btn prev" onclick="slideGames(-1)">&#60;</button>
+            <button class="carousel-btn next" onclick="slideGames(1)">&#62;</button>
+            
+            <div class="games-track" id="games-track">
+                
+                <!-- Game 1 -->
+                <a href="https://cyberdebug2077.netlify.app/" target="_blank" class="window game-card">
+                    <div class="window-header pixel-text">CYBERDEBUG2077.exe<div class="window-controls"><span></span><span></span><span></span></div></div>
+                    <div class="game-cover">
+                        <img src="CYBER.gif" alt="Cyberdebug Cover">
+                        <div class="game-cover-overlay pixel-text">VIEW PROJECT -></div>
+                    </div>
+                    <div class="game-info">
+                        <div class="tag">EDUCATIONAL/PUZZLE</div><h3>CYBERDEBUG 2077</h3><p>Cyber Debug is an educational coding game where players learn HTML, CSS, and JavaScript by solving quizzes, fixing errors, and using interactive coding challenges.</p>
+                    </div>
+                </a>
+
+                <!-- Game 2 -->
+                <a href="project-detail.html" target="_blank" class="window game-card">
+                    <div class="window-header pixel-text">UNTITLED.exe<div class="window-controls"><span></span><span></span><span></span></div></div>
+                    <div class="game-cover">
+                        <img src="DVD.jpg" alt="Dream State Cover">
+                        <div class="game-cover-overlay pixel-text">VIEW PROJECT -></div>
+                    </div>
+                    <div class="game-info">
+                        <div class="tag">N/A</div><h3>COMING SOON</h3><p>UNKWOWN</p>
+                    </div>
+                </a>
+
+                <!-- Game 3 -->
+                <a href="project-detail.html" target="_blank" class="window game-card">
+                    <div class="window-header pixel-text">UNTITLED.exe<div class="window-controls"><span></span><span></span><span></span></div></div>
+                    <div class="game-cover">
+                        <img src="DVD.jpg" alt="Untitled Cover">
+                        <div class="game-cover-overlay pixel-text">VIEW PROJECT -></div>
+                    </div>
+                    <div class="game-info">
+                        <div class="tag">N/A</div><h3>COMING SOON</h3><p>UNKWOWN</p>
+                    </div>
+                </a>
+
+                <!-- Game 4 -->
+                <a href="project-detail.html" target="_blank" class="window game-card">
+                    <div class="window-header pixel-text">UNTITLED.exe<div class="window-controls"><span></span><span></span><span></span></div></div>
+                    <div class="game-cover">
+                        <img src="DVD.jpg" alt="Neon Drifter Cover">
+                        <div class="game-cover-overlay pixel-text">VIEW PROJECT -></div>
+                    </div>
+                    <div class="game-info">
+                        <div class="tag">N/A</div><h3>COMING SOON</h3><p>UNKWOWN</p>
+                    </div>
+                </a>
+
+                <!-- Game 5 -->
+                <a href="project-detail.html" target="_blank" class="window game-card">
+                    <div class="window-header pixel-text">UNTITLED.exe<div class="window-controls"><span></span><span></span><span></span></div></div>
+                    <div class="game-cover">
+                        <img src="DVD.jpg" alt="Void Walker Cover">
+                        <div class="game-cover-overlay pixel-text">VIEW PROJECT -></div>
+                    </div>
+                    <div class="game-info">
+                        <div class="tag">N/A</div><h3>COMING SOON</h3><p>UNKWOWN</p>
+                    </div>
+                </a>
+
+                <!-- Game 6 -->
+                <a href="project-detail.html" target="_blank" class="window game-card">
+                    <div class="window-header pixel-text">UNTITLED.exe<div class="window-controls"><span></span><span></span><span></span></div></div>
+                    <div class="game-cover">
+                        <img src="DVD.jpg" alt="Chrono Link Cover">
+                        <div class="game-cover-overlay pixel-text">VIEW PROJECT -></div>
+                    </div>
+                    <div class="game-info">
+                        <div class="tag">N/A</div><h3>COMING SOON</h3><p>UNKWOWN</p>
+                    </div>
+                </a>
+
+                <!-- Game 7 -->
+                <a href="project-detail.html" target="_blank" class="window game-card">
+                    <div class="window-header pixel-text">UNTITLED.exe<div class="window-controls"><span></span><span></span><span></span></div></div>
+                    <div class="game-cover">
+                        <img src="DVD.jpg" alt="Silent Core Cover">
+                        <div class="game-cover-overlay pixel-text">VIEW PROJECT -></div>
+                    </div>
+                    <div class="game-info">
+                        <div class="tag">N/A</div><h3>COMING SOON</h3><p>UNKWOWN</p>
+                    </div>
+                </a>
+
+                <!-- Game 8 -->
+                <a href="project-detail.html" target="_blank" class="window game-card">
+                    <div class="window-header pixel-text">UNTITLED.exe<div class="window-controls"><span></span><span></span><span></span></div></div>
+                    <div class="game-cover">
+                        <img src="DVD.jpg" alt="Pixel Punks Cover">
+                        <div class="game-cover-overlay pixel-text">VIEW PROJECT -></div>
+                    </div>
+                    <div class="game-info">
+                        <div class="tag">N/A</div><h3>COMING SOON</h3><p>UNKWOWN</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CREATOR SECTION -->
+        <div id="creator" class="section-title">
+            <span class="asterisk">*</span> THE CREATOR
+        </div>
+
+        <section class="creator-section">
+            <div class="window creator-card" id="tilt-card">
+                <div class="creator-visuals">
+                    <div class="avatar-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <p class="pixel-text" style="margin-top: 15px; text-align: center;">STATUS: ONLINE</p>
+                </div>
+                
+                <div class="creator-info">
+                    <div class="pixel-text" style="color: var(--accent-blue);">/// USER PROFILE</div>
+                    <h2> DRAKE </h2>
+                    
+                    <div class="rpg-stats pixel-text">
+                        <p>> ROLE : FOUNDER & DIRECTOR</p>
+                        <p>> CLASS : STUDENT DEVELOPER</p>
+                        <p>> GUILD : ART OF DRK</p>
+                        <p>> SKILLS: DESIGN, CODE, VISION</p>
+                    </div>
+
+                    <p>Building a new era of interactive entertainment. Fascinated by the aesthetics of late 90s OS interfaces and modern minimalist design, I created <strong>Art of drk</strong> to house projects that push boundaries.</p>
+                    
+                    <br>
+                    <a href="https://artof-drk.vercel.app/" class="window" style="padding: 10px 20px; display: inline-block; background: var(--text-main); color: var(--bg-color);">
+                         <span class="pixel-text">VIEW PORTFOLIO -></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-text">
+                <h2>THE STUDIO</h2>
+                <p><strong>Art of drk</strong> is an independent game development label with a vision for bold aesthetics and tight gameplay. It focuses on creating unique digital experiences that blend style, creativity, and interactive design into memorable games and projects.</p>
+                <p>Driven by experimentation and a love for game development, Art of drk continues to evolve as a growing creative space where ideas are built from concept to playable reality.</p>
+            </div>
+            <!-- Image background placeholder for studio -->
+            <div class="window" style="background: url('001.gif') center/cover; min-height: 250px; display: flex; align-items: center; justify-content: center; position: relative;">
+                <div style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5);"></div>
+                <span class="pixel-text" style="color: #FFF; z-index: 2;"></span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ENHANCED Y2K FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            
+            <!-- Column 1: Brand & Anonymous Comment Form -->
+            <div class="footer-brand">
+                <h2 class="logo">Art of drk</h2>
+                
+                <!-- Anonymous Feedback Form -->
+                <div class="window newsletter-box">
+                    <div class="window-header pixel-text" style="font-size: 0.5rem; padding: 4px 8px;">
+                        ANON_MSG.exe
+                    </div>
+                    <form class="newsletter-input-wrapper" id="comment-form">
+                        <input type="text" name="message" id="comment-input" placeholder="DROP A COMMENT..." required autocomplete="off" maxlength="100">
+                        <button type="submit" class="pixel-text" id="comment-btn">SEND</button>
+                    </form>
+                </div>
+                <div class="pixel-text" style="font-size: 0.55rem; color: gray; margin-top: 10px;">> * 100% ANONYMOUS FEEDBACK</div>
+            </div>
+
+            <!-- Column 2: Sitemap Links -->
+            <div class="footer-links pixel-text">
+                <p style="color: var(--accent-blue);">/// SITEMAP</p>
+                <a href="#games">GAMES</a>
+                <a href="#creator">CREATOR</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#">PRESS KIT</a>
+            </div>
+
+            <!-- Column 3: Legal Links -->
+            <div class="footer-links pixel-text">
+                <p style="color: var(--accent-blue);">/// LEGAL</p>
+                <a href="javascript:void(0)" onclick="openModal('terms')">TERMS OF USE</a>
+                <a href="javascript:void(0)" onclick="openModal('privacy')">PRIVACY POLICY</a>
+                <a href="javascript:void(0)" onclick="openModal('cookie')">COOKIE POLICY</a>
+                <a href="javascript:void(0)" onclick="openModal('contact')">CONTACT</a>
+            </div>
+
+            <!-- Column 4: Social Icons -->
+            <div class="footer-socials">
+                <p class="pixel-text" style="color: var(--accent-blue);">/// CONNECT</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Discord">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12H9.01"></path><path d="M15 12H15.01"></path><path d="M7.5 7.5c3.5 -1 5.5 -1 9 0c0 0 2.5 4.5 3 11c-2.5 1.5 -5 1.5 -7.5 1c0 0 -0.5 -1 -1 -1c-1.5 0.5 -2.5 0.5 -4 0c-0.5 0 -1 1 -1 1c-2.5 0.5 -5 0.5 -7.5 -1c0.5 -6.5 3 -11 3 -11z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright Bottom -->
+        <div class="footer-bottom">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L13.8 9.5L24 12L13.8 14.5L12 24L10.2 14.5L0 12L10.2 9.5L12 2Z" fill="var(--accent-blue)"/>
+            </svg>
+            <div class="pixel-text" style="font-size: 0.6rem; color: gray;">
+                © 2026 ART OF DRK. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Universal OS Window Modal -->
+    <div id="os-modal" class="modal-overlay">
+        <div class="window modal-content">
+            <div class="window-header pixel-text">
+                <span id="modal-title">INFO.exe</span>
+                <div class="window-controls" onclick="closeModal()">
+                    <span style="background: #ff5f56;"></span>
+                    <span style="background: #ffbd2e;"></span>
+                    <span style="background: #27c93f;"></span>
+                </div>
+            </div>
+            <div class="modal-body" id="modal-content-body">
+                <!-- Data injects here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
